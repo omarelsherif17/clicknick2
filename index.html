@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>clicknic</title>
+  <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <a class="navbar-brand" href="index.html" id="title">
+      <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Clicknic
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li>
+          <div class="dropdown dropleft">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Sign in
+            </button>
+            <div class="dropdown-menu" id="dropdownsignin" style="background-color: #9DD9F3;">
+              <form class="form-signin" action="index.html" method="post">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Find the best doctors in town.</h1>
+
+  <div class="row">
+
+    <div class="col-lg-9">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" style="margin-top: 166px; margin-left: 25px;" type="button" id="dropdownMenuButtonSpecialities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          🥼 Specialities
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #9DD9F3;">
+          <a class="dropdown-item dmSpecialities" href="#">Dentistry</a>
+          <a class="dropdown-item dmSpecialities" href="#">Ear, Nose and Throat</a>
+          <a class="dropdown-item dmSpecialities" href="#">Orthopedics</a>
+          <a class="dropdown-item dmSpecialities" href="#">Psychiatry</a>
+          <a class="dropdown-item dmSpecialities" href="#">Neurology</a>
+          <a class="dropdown-item dmSpecialities" href="#">Cardiology and Vascular Disease</a>
+          <a class="dropdown-item dmSpecialities" href="#">Dietatian and Nutrition</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" style="margin-top: 166px" type="button" id="dropdownMenuButtonAreas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ✆ Area
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #9DD9F3;">
+          <a class="dropdown-item dmAreas" href="#">Cairo</a>
+          <a class="dropdown-item dmAreas" href="#">Giza</a>
+          <a class="dropdown-item dmAreas" href="#">Alexandria</a>
+          <a class="dropdown-item dmAreas" href="#">Port Said</a>
+          <a class="dropdown-item dmAreas" href="#">Hurghada</a>
+          <a class="dropdown-item dmAreas" href="#">Luxor</a>
+          <a class="dropdown-item dmAreas" href="#">Fayoum</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <form class="centered" autocomplete="off">
+    <h3>Search by doctor's name</h3>
+    <div class="autocomplete" style="width:500px;">
+      <input id="myInputDoctor" type="text" name="myDoctor" placeholder="Doctor's name">
+    </div>
+    <input type="submit" value="Search">
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
